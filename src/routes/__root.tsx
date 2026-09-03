@@ -127,6 +127,8 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
+      {/* Success / error notifications used across the app. */}
+      <Toaster richColors position="top-right" />
     </QueryClientProvider>
   );
 }
